@@ -1,2 +1,7 @@
+# packages, build folder
 node_modules
 dist
+
+
+# Environment variable files
+.env

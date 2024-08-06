@@ -1,3 +1,4 @@
+import 'module-alias/register';
 import express from 'express';
 import userRoutes from '@routes/userRoutes';
 import { Request, Response, NextFunction } from 'express';

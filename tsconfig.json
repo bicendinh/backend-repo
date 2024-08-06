@@ -3,8 +3,7 @@
     "target": "ES6",
     "module": "commonjs",
     "outDir": "./dist",
-    "rootDir": "./", // Root directory is the project root
-    "baseUrl": ".", // Set the base directory to the project root
+    "baseUrl": ".",
     "paths": {
       "@config/*": ["config/*"],
       "@controller/*": ["controller/*"],
@@ -15,8 +14,9 @@
       "@routes/*": ["routes/*"]
     },
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
   },
-  "include": ["**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "build"]
 }
