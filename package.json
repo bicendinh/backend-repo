@@ -2,10 +2,11 @@
   "name": "backend-repo",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/core/app.js",
+  "main": "core/app.js",
   "scripts": {
     "build": "tsc",
     "start:prod": "node -r module-alias/register dist/core/app.js",
+    "start:watch": "nodemon -e ts -x npm run start:dev",
     "start:dev": "ts-node -r tsconfig-paths/register core/app.ts"
   },
   "keywords": [],
@@ -19,6 +20,9 @@
     "module-alias": "^2.2.2"
   },
   "devDependencies": {
+    "@types/morgan": "^1.9.9",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^4.5.2"
